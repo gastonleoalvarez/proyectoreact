@@ -36,4 +36,9 @@ main{
 
 footer{
   background-color: black;
+  padding: 1rem 0.5rem;
+}
+
+header>nav>a{
+  margin-left: 1rem;
 }

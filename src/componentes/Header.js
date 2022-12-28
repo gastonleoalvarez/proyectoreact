@@ -1,12 +1,11 @@
+import NavBar from "./NavBar"
+
+const isHeader = true
 const Header = () => {
     return (
         <header>
         <h1>Titulo</h1>
-            <nav>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            </nav>          
+        <NavBar isHeader={isHeader}/>       
         </header>
     )
 }
