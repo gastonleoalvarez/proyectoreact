@@ -1,12 +1,22 @@
+import {Link} from "react-router-dom"
 import NavBar from "./NavBar"
 
-const isHeader = true
 const Header = () => {
+const isHeader = true
+
     return (
+        <>
         <header>
-        <h1>Titulo</h1>
-        <NavBar isHeader={isHeader}/>       
+            <Link to="/">
+                <h1>Titulo</h1>
+            </Link>
+    
+        <NavBar 
+            isHeader={isHeader}
+        />   
         </header>
+        <NavBar/>
+        </>
     )
 }
 

@@ -1,15 +1,14 @@
+import {Link} from "react-router-dom"
 import CartWidget from "./CartWidget"
 const NavBar = (props) => {
 
-    console.log(props.linkFooter)
-    console.log(props.hrefFooter)
+    const { isHeader, linkFooter} = props
 
-if(props.isHeader){
+if(isHeader){
     return(
         <nav>
-        <a href="#">categoria 1</a>
-        <a href="#">categoria 2</a>
-        <a href="#">categoria 3</a>
+        <Link to="/productos/hombre">HOMBRE</Link>
+        <Link to="/productos/mujer">MUJER</Link>
         <CartWidget/>
         </nav>          
     )

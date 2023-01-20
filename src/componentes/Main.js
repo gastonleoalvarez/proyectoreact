@@ -1,7 +1,15 @@
+import {Route, Routes} from "react-router-dom"
+import ItemListContainer from "./ItemListContainer";
+
 const Main = () => {
     return (
         <main>
-        <h2>Titulo</h2>          
+            <Routes/>
+                <Route path="/" element={<ItemListContainer/>}/>
+                <Route path="/productos/:categoria" element={<ItemListContainer/>}/>
+                <Route path="/item/:id" element={<ItemListContainer/>}/>
+                
+            <Routes/>       
         </main>
     )
 }
